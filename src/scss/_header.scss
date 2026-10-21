@@ -1,5 +1,5 @@
 header {
-  border-bottom: solid 1px #e5e7eb;
+  border-bottom: solid 1px var(--border-color);
 
   .container {
     width: 100%;
@@ -15,7 +15,7 @@ header {
       font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.75rem;
-      color: #137fec;
+      color: var(--primary-color);
     }
 
     .header-inner {
@@ -51,11 +51,11 @@ header {
         gap: 1.5rem;
 
         a {
-          color: #4b5563;
+          color: var(--text-color);
           text-decoration: inherit;
 
           &:hover {
-            color: #137fec;
+            color: var(--primary-color);
           }
         }
       }
