@@ -70,7 +70,7 @@ header {
           width: 200px;
           padding: 1rem 0.5rem 1rem 1rem;
           border: none;
-          background-color: #f3f4f6;
+          background-color: var(--gray-color-100);
         }
 
         button {
@@ -78,10 +78,26 @@ header {
           border-bottom-right-radius: 1rem;
           padding: 0.5rem;
           border: none;
-          background-color: #f3f4f6;
+          background-color: var(--gray-color-100);
           cursor: pointer;
         }
       }
+
+      button {
+        background-color: transparent;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
+
+  .material-symbols-outlined {
+    font-size: 1.5rem;
+    line-height: 1;
   }
 }
