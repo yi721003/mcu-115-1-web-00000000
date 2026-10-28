@@ -1,35 +1,26 @@
 footer {
   border-top: 1px solid var(--border-color);
 
-  .container {
-    width: 100%;
-    max-width: 90vw;
-    box-sizing: border-box;
-    margin: 0px auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    padding-block: 1rem;
+  }
 
-    > div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem 1.5rem;
-      padding-block: 1rem;
-    }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 1.5rem;
+    a {
+      color: var(--text-color);
+      text-decoration: inherit;
 
-      a {
-        color: var(--text-color);
-        text-decoration: inherit;
-
-        &:hover {
-          color: var(--primary-color);
-        }
+      &:hover {
+        color: var(--primary-color);
       }
     }
   }

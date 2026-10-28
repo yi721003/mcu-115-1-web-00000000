@@ -1,90 +1,80 @@
 header {
   border-bottom: solid 1px var(--border-color);
 
-  .container {
-    width: 100%;
-    max-width: 90vw;
-    box-sizing: border-box;
-    margin: 0px auto;
+  .header-inner {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding-left: 2rem;
-    padding-right: 2rem;
+    .site-title {
+      margin: 0px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.75rem;
+      color: #137fec;
+    }
 
-    .header-inner {
-      height: 4rem;
+    .header-brand,
+    .header-actions {
       display: flex;
-      justify-content: space-between;
       align-items: center;
 
-      .site-title {
-        margin: 0px;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: #137fec;
+      &.header-brand {
+        gap: 2rem;
       }
 
-      .header-brand,
-      .header-actions {
-        display: flex;
-        align-items: center;
+      &.header-actions {
+        gap: 0.5rem;
+      }
+    }
 
-        &.header-brand {
-          gap: 2rem;
-        }
+    nav {
+      display: flex;
+      gap: 1.5rem;
 
-        &.header-actions {
-          gap: 0.5rem;
+      a {
+        color: var(--text-color);
+        text-decoration: inherit;
+
+        &:hover {
+          color: var(--primary-color);
         }
       }
+    }
 
-      nav {
-        display: flex;
-        gap: 1.5rem;
+    div.search {
+      display: flex;
+      gap: 0;
 
-        a {
-          color: var(--text-color);
-          text-decoration: inherit;
-
-          &:hover {
-            color: var(--primary-color);
-          }
-        }
-      }
-
-      div.search {
-        display: flex;
-        gap: 0;
-
-        input {
-          border-top-left-radius: 1rem;
-          border-bottom-left-radius: 1rem;
-          width: 200px;
-          padding: 1rem 0.5rem 1rem 1rem;
-          border: none;
-          background-color: var(--gray-color-100);
-        }
-
-        button {
-          border-top-right-radius: 1rem;
-          border-bottom-right-radius: 1rem;
-          padding: 0.5rem;
-          border: none;
-          background-color: var(--gray-color-100);
-          cursor: pointer;
-        }
+      input {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 200px;
+        padding: 1rem 0.5rem 1rem 1rem;
+        border: none;
+        background-color: var(--gray-color-100);
       }
 
       button {
-        background-color: transparent;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         padding: 0.5rem;
         border: none;
+        background-color: var(--gray-color-100);
         cursor: pointer;
-        color: var(--text-color);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
       }
+    }
+
+    button {
+      background-color: transparent;
+      padding: 0.5rem;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
