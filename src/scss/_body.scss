@@ -1,0 +1,17 @@
+.content-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.category-sidebar {
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.book-main {
+  flex: 1 1 0%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
