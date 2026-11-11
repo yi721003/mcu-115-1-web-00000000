@@ -133,3 +133,37 @@
     }
   }
 }
+
+.mobile-tools {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mobile-tools {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-tools input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.75rem;
+  }
+
+  .mobile-tools summary {
+    cursor: pointer;
+    padding-block: 0.5rem;
+  }
+
+  .mobile-tools nav {
+    display: grid;
+    gap: 0.5rem;
+  }
+}
+
+.mobile-tools :focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
