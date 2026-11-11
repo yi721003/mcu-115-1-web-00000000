@@ -6,8 +6,13 @@ header {
   z-index: 50;
 
   .header-inner {
-    height: 4rem;
+    min-height: 4rem;
+    height: auto;
+    padding-block: 0.5rem;
+
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
 
@@ -25,7 +30,9 @@ header {
       align-items: center;
 
       &.header-brand {
-        gap: 2rem;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: 0.5rem 2rem;
       }
 
       &.header-actions {
@@ -35,11 +42,16 @@ header {
 
     nav {
       display: flex;
+      flex-wrap: wrap;
       gap: 1.5rem;
     }
 
+    label[for="book-search"] {
+      display: var(--search-bar-display);
+    }
+
     div.search {
-      display: flex;
+      display: var(--search-bar-display);
       align-items: stretch;
       gap: 0;
 

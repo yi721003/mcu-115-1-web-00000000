@@ -6,6 +6,7 @@
 }
 
 .category-sidebar {
+  display: var(--aside-display);
   width: 20%;
   flex-shrink: 0;
   position: sticky;
@@ -94,7 +95,7 @@
 
   .books {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 256px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--book-min-width)), 1fr));
     gap: 2.5rem 1.5rem;
 
     > div {
