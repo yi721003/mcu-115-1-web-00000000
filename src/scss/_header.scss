@@ -41,7 +41,7 @@ header {
     }
 
     nav {
-      display: flex;
+      display: var(--nav-display);
       flex-wrap: wrap;
       gap: 1.5rem;
     }
