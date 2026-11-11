@@ -92,7 +92,7 @@
 
   .books {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 256px), 1fr));
     gap: 2.5rem 1.5rem;
 
     > div {
