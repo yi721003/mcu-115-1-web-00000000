@@ -89,4 +89,38 @@
       }
     }
   }
+
+  .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    gap: 2.5rem 1.5rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+
+      h4 {
+        margin: 0.5rem 0 0;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+      }
+
+      span:first-of-type {
+        color: var(--gray-color-500);
+      }
+
+      span:last-of-type {
+        color: var(--primary-color);
+        font-weight: 700;
+      }
+    }
+  }
 }
