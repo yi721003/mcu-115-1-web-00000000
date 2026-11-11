@@ -99,11 +99,16 @@
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
 
       img {
         display: block;
         width: 100%;
         border-radius: 0.5rem;
+        aspect-ratio: 3 / 4;
+        object-fit: contain;
+        background: var(--gray-color-100);
       }
 
       h4 {
@@ -120,6 +125,7 @@
       span:last-of-type {
         color: var(--primary-color);
         font-weight: 700;
+        margin-top: auto;
       }
     }
   }
