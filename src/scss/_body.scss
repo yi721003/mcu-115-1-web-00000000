@@ -117,6 +117,17 @@
         line-height: 1.5rem;
       }
 
+      h4 a {
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--primary-color);
+          outline-offset: 3px;
+        }
+      }
+
       span:first-of-type {
         color: var(--gray-color-500);
       }
