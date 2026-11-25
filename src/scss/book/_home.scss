@@ -3,9 +3,12 @@
 div.home {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 
   > div {
-    width: 50%;
+    flex: 1 1 0%;
+    min-width: 0;
+    width: auto;
 
     &.text {
       display: flex;
@@ -36,6 +39,7 @@ div.home {
       div {
         &.button {
           display: flex;
+          flex-wrap: wrap;
           gap: 1.25rem;
 
           button {
@@ -82,7 +86,9 @@ div.home {
       align-items: center;
 
       img {
-        width: 300px;
+        display: block;
+        width: min(100%, var(--home-image-width, 300px));
+        height: auto;
       }
     }
   }
